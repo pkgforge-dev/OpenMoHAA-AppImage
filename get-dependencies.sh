@@ -27,8 +27,8 @@ echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin
 cmake -S ./openmohaa -B build \ 
-    -D CMAKE_INSTALL_PREFIX=/usr/ \
-    -D USE_SYSTEM_LIBS=1 \
-    -D CMAKE_BUILD_TYPE=Release
+    -DCMAKE_INSTALL_PREFIX=/usr/ \
+    -DUSE_SYSTEM_LIBS=1 \
+    -DCMAKE_BUILD_TYPE=Release
 cmake --build build -j$(nproc)
 cmake --install build
