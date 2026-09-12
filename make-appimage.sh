@@ -12,7 +12,7 @@ export DESKTOP=https://raw.githubusercontent.com/openmoh/openmohaa/refs/heads/ma
 export DEPLOY_OPENGL=1
 
 # Deploy dependencies
-quick-sharun /usr/lib/openmohaa /usr/lib/libopenal.so*
+quick-sharun ./AppDir/bin/* /usr/lib/libopenal.so*
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
