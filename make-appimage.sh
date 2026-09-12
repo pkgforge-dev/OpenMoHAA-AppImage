@@ -11,7 +11,7 @@ export ICON=PATH_OR_URL_TO_ICON
 export DESKTOP=PATH_OR_URL_TO_DESKTOP_ENTRY
 
 # Deploy dependencies
-quick-sharun /usr/bin/openmohaa
+quick-sharun /usr/bin/openmohaa /usr/lib/libopenal.so*
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
