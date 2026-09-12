@@ -26,9 +26,6 @@ git clone --depth 1 "$REPO" ./openmohaa
 echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin
-cmake -S ./openmohaa -B build \ 
-    -DCMAKE_INSTALL_PREFIX=/usr/ \
-    -DUSE_SYSTEM_LIBS=1 \
-    -DCMAKE_BUILD_TYPE=Release
+cmake -S ./openmohaa -B build \-DCMAKE_INSTALL_PREFIX=/usr -DUSE_SYSTEM_LIBS=1 -DCMAKE_BUILD_TYPE=Release
 cmake --build build -j$(nproc)
 cmake --install build
