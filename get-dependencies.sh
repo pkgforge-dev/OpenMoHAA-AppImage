@@ -28,4 +28,4 @@ echo "$VERSION" > ~/version
 mkdir -p ./AppDir/bin
 cmake -S ./openmohaa -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build -j$(nproc)
-mv -v ./build/launch_* ./build/Release/omohaaded ./build/Release/openmohaa ./build/Release/cgame.so ./build/Release/game.so ./build/Release/renderer_opengl1.so ./AppDir/bin
+mv -v ./build/launch_* ./build/Release/omohaaded ./build/Release/openmohaa ./build/Release/*.so ./AppDir/bin
