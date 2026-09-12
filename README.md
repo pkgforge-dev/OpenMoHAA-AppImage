@@ -18,6 +18,7 @@
 </div>
 
 ## ⚠️ Game assets within `~/.local/share/openmohaa` ⚠️
+** Run `./OpenMoHAA*.AppImage --make-symlinks`** to expose each bundled binary in `~/.local/bin` as symlinks the AppImage (similar to how busybox works).
 
 ---
 
