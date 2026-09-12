@@ -7,8 +7,8 @@ export ARCH
 export OUTPATH=./dist
 export ADD_HOOKS="self-updater.hook"
 export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}|latest|*$ARCH.AppImage.zsync"
-export ICON=/usr/share/icons/hicolor/symbolic/apps/org.openmoh.openmohaa.svg
-export DESKTOP=/usr/share/applications/org.openmoh.openmohaa.desktop
+export ICON=https://raw.githubusercontent.com/openmoh/openmohaa/a2f340195975f4f042e28a60b62561dd9a0b2700/misc/openmohaa.svg
+export DESKTOP=https://raw.githubusercontent.com/openmoh/openmohaa/refs/heads/main/misc/linux/org.openmoh.openmohaa.desktop.in
 export DEPLOY_OPENGL=1
 
 # Deploy dependencies
